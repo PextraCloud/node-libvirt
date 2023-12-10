@@ -1,0 +1,60 @@
+{
+  "name": "@pextra/node-library-template",
+  "version": "0.0.0",
+  "description": "A repository template for a Node.js library.",
+  "main": "dist/index.js",
+  "exports": {
+    "node": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@types/chai": "^4.3.11",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "20.8.2",
+    "chai": "^4.3.10",
+    "gts": "^5.2.0",
+    "husky": "^8.0.3",
+    "mocha": "^10.2.0",
+    "typescript": "~5.2.0",
+    "ts-node": "^10.9.1"
+  },
+  "scripts": {
+	"setup": "sh projectSetup.sh",
+
+    "lint": "gts lint",
+    "fix": "gts fix",
+    "build": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run build",
+    "clean": "gts clean",
+    "posttest": "npm run lint",
+    "test:run": "npm run test:all:run",
+    "test:unit:run": "MOCHA_TEST_FOLDER=unit npm run test:_run",
+    "test:integration:run": "MOCHA_TEST_FOLDER=integration npm run test:_run",
+    "test:functional:run": "MOCHA_TEST_FOLDER=functional npm run test:functional",
+    "test:all:run": "MOCHA_TEST_FOLDER='**' npm run test:functional",
+    "test": "npm run test:run",
+    "test:unit": "npm run test:unit:run",
+    "test:integration": "npm run test:integration:run",
+    "test:functional": "npm run test:_run",
+    "test:_run": "mocha --require ts-node/register test/$MOCHA_TEST_FOLDER/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PextraCloud/node-library-template.git"
+  },
+  "keywords": [],
+  "author": "Pextra Inc.",
+  "license": "UNLICENSED"
+}
