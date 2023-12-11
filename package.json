@@ -1,7 +1,7 @@
 {
-  "name": "@pextra/node-library-template",
+  "name": "@pextra/node-libvirt",
   "version": "0.0.0",
-  "description": "A repository template for a Node.js library.",
+  "description": "A NodeJS library providing bindings (using NAPI) for libvirt written in TypeScript.",
   "main": "dist/index.js",
   "exports": {
     "node": {
@@ -31,8 +31,6 @@
     "ts-node": "^10.9.1"
   },
   "scripts": {
-	"setup": "sh projectSetup.sh",
-
     "lint": "gts lint",
     "fix": "gts fix",
     "build": "tsc -p tsconfig.build.json",
@@ -52,9 +50,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PextraCloud/node-library-template.git"
+    "url": "git+https://github.com/PextraCloud/node-libvirt.git"
   },
   "keywords": [],
   "author": "Pextra Inc.",
-  "license": "UNLICENSED"
+  "license": "MIT"
 }
