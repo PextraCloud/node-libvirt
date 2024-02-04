@@ -1,4 +1,5 @@
-Copyright (c) 2019 Leon Rinkel <leon@rinkel.me> and vmngr/libvirt contributers
+Copyright for portions of node-libvirt are held by Leon Rinkel <leon@rinkel.me> and vmngr/libvirt contributors, 2019 as part of project vmngr/libvirt.
+All other copyright for node-libvirt are held by Pextra Inc., 2024.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
