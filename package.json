@@ -44,17 +44,7 @@
     "build": "tsc -p tsconfig.build.json",
     "prepublishOnly": "npm run build",
     "clean": "gts clean",
-    "posttest": "npm run lint",
-    "test:run": "npm run test:all:run",
-    "test:unit:run": "MOCHA_TEST_FOLDER=unit npm run test:_run",
-    "test:integration:run": "MOCHA_TEST_FOLDER=integration npm run test:_run",
-    "test:functional:run": "MOCHA_TEST_FOLDER=functional npm run test:functional",
-    "test:all:run": "MOCHA_TEST_FOLDER='**' npm run test:functional",
-    "test": "npm run test:run",
-    "test:unit": "npm run test:unit:run",
-    "test:integration": "npm run test:integration:run",
-    "test:functional": "npm run test:_run",
-    "test:_run": "mocha --require ts-node/register test/$MOCHA_TEST_FOLDER/*.ts"
+    "posttest": "npm run lint"
   },
   "repository": {
     "type": "git",
