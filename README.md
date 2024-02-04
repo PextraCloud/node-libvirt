@@ -17,6 +17,16 @@ A NodeJS library providing bindings (using NAPI) for libvirt written in TypeScri
 
 ## Install
 
+You must have the `libvirt` development libraries installed on your system. You can install them using your system package manager.
+
+For example, on Debian-based systems:
+
+```sh
+apt-get install libvirt-dev
+```
+
+After you have the `libvirt` development libraries installed, you can install the package using npm:
+
 ```sh
 npm install @pextra/node-libvirt
 ```
