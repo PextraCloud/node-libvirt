@@ -11,8 +11,8 @@ test/
 SECURITY.md
 CHANGELOG.md
 
-projectSetup.sh
-
 .husky/
 .vscode/
 .github/
+
+styleguide/
