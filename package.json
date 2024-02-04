@@ -50,7 +50,7 @@
     "type": "git",
     "url": "git+https://github.com/PextraCloud/node-libvirt.git"
   },
-  "keywords": [],
+  "keywords": ["libvirt", "bindings", "napi", "qemu", "kvm", "hypervisor", "vm", "virtualization", "xen", "vmware"],
   "author": "Pextra Inc.",
   "license": "MIT"
 }
