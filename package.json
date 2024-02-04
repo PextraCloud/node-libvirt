@@ -12,7 +12,7 @@
   },
   "directories": {
     "lib": "lib",
-    "test": "test"
+    "src": "src"
   },
   "engines": {
     "node": ">=14.0.0"
@@ -20,15 +20,14 @@
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
-    "@types/chai": "^4.3.11",
-    "@types/mocha": "^10.0.6",
     "@types/node": "20.8.2",
-    "chai": "^4.3.10",
     "gts": "^5.2.0",
     "husky": "^8.0.3",
-    "mocha": "^10.2.0",
-    "typescript": "~5.2.0",
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.1",
+    "typescript": "~5.2.0"
+  },
+  "dependencies": {
+    "node-addon-api": "^7.1.0"
   },
   "scripts": {
     "lint": "gts lint",
