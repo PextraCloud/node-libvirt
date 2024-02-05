@@ -44,6 +44,7 @@
     "build": "tsc -p tsconfig.build.json",
     "prepublishOnly": "npm run build",
     "clean": "gts clean",
+	"test": "echo 'no tests'",
     "posttest": "npm run lint"
   },
   "repository": {
