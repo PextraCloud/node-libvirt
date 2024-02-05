@@ -8,6 +8,8 @@ commitlint.config.js
 lib/
 test/
 
+build/
+
 SECURITY.md
 CHANGELOG.md
 
