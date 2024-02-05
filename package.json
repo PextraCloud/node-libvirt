@@ -1,6 +1,6 @@
 {
   "name": "@pextra/node-libvirt",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A NodeJS library providing bindings (using NAPI) for libvirt written in TypeScript.",
   "main": "dist/index.js",
   "exports": {
@@ -20,7 +20,7 @@
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
-	"@types/lodash": "^4.14.202",
+    "@types/lodash": "^4.14.202",
     "@types/bindings": "^1.5.5",
     "@types/bytes": "^3.1.4",
     "@types/node": "20.8.2",
@@ -50,7 +50,18 @@
     "type": "git",
     "url": "git+https://github.com/PextraCloud/node-libvirt.git"
   },
-  "keywords": ["libvirt", "bindings", "napi", "qemu", "kvm", "hypervisor", "vm", "virtualization", "xen", "vmware"],
+  "keywords": [
+    "libvirt",
+    "bindings",
+    "napi",
+    "qemu",
+    "kvm",
+    "hypervisor",
+    "vm",
+    "virtualization",
+    "xen",
+    "vmware"
+  ],
   "author": "Pextra Inc.",
   "license": "MIT"
 }
