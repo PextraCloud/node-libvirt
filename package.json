@@ -1,6 +1,6 @@
 {
   "name": "@pextra/node-libvirt",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A NodeJS library providing bindings (using NAPI) for libvirt written in TypeScript.",
   "main": "dist/index.js",
   "exports": {
